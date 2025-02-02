@@ -1,75 +1,130 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from '@/components/AboutMe.astro';
-import Badge from '@/components/Badge.astro';
-import Briefcase from '@/components/icons/Briefcase.astro';
-import CodeIcon from '@/components/icons/Code.astro';
-import Experience from '@/components/Experience.astro';
-import GitHubIcon from '@/components/icons/GitHub.astro';
-import LinkedInIcon from '@/components/icons/LinkedIn.astro';
-import MailIcon from '@/components/icons/Mail.astro';
-import ProfileCheck from '@/components/icons/ProfileCheck.astro';
-import Projects from '@/components/Projects.astro';
-import SectionContainer from '@/components/SectionContainer.astro';
-import SocialPill from '@/components/SocialPill.astro';
+import AboutMe from "@/components/AboutMe.astro";
+import Badge from "@/components/Badge.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import Skills from "@/components/icons/Skills.astro";
+
+// Gmail direct compose link
+const gmailLink =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=aniruddhbambhaniya.dev.29@gmail.com";
 ---
 
-<Layout icon="/srgobi.webp" title="Porfolio de srgobi - Desarrollador y Programador Web con 5 años de experiencia" description="Contrata a srgobi para crear tu aplicación web o móvil. Desarrollador Web Full-Stack. Especializado en crear aplicaciones únicas.">
-	<main class="px-4">
-		<SectionContainer class="py-16 md:py-36">
-			<img class="rounded-full size-12 mb-4" src="/srgobi.webp" alt="srgobi logo" />
-			<h1 class="text-zinc-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				Hey, soy srgobi <a href="https://linkedin.com/in/srgobi" target="_blank" rel="noopener" class="flex justify-center items-center hover:scale-105 transition">
-					<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
-				<span>+5 años de experiencia.</span><span class="text-yellow-800 dark:text-yellow-200"> Desarrollador Web Full-Stack</span>
-				.<span class="text-red-800 dark:text-red-200"> De Granada, España</span>.
-				<span class="text-sky-800 dark:text-sky-200">Especializado en crear aplicaciones únicas.</span>
-			</h2>
+<Layout
+  icon="/srgobi.webp"
+  title="Portfolio de srgobi - Desarrollador y Programador Web con 5 años de experiencia"
+  description="Contrata a srgobi para crear tu aplicación web o móvil. Desarrollador Web Full-Stack. Especializado en crear aplicaciones únicas."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="/srgobi.webp"
+        alt="srgobi logo"
+      />
 
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<SocialPill href="https://linkedin.com/in/srgobi">
-					<LinkedInIcon class="size-4 md:size-6" />
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/srgobi">
-					<GitHubIcon class="size-4 md:size-6" />
-					GitHub
-				</SocialPill>
-				<SocialPill href="mailto:contacto@srgobi.com">
-					<MailIcon class="size-4 md:size-6" />
-					contacto@srgobi.com
-				</SocialPill>
-			</nav>
-		</SectionContainer>
+      <h1
+        class="text-zinc-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, Aniruddh Bambhaniya
+        <a
+          href="https://www.linkedin.com/in/anirudha-bambhaniya/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center hover:scale-105 transition"
+        >
+          <Badge>Available for</Badge>
+        </a>
+      </h1>
 
-		<div class="space-y-24">
-			<SectionContainer id="experiencia">
-				<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90">
-					<Briefcase class="size-7" />
-					Experiencia laboral
-				</h2>
-				<Experience />
-			</SectionContainer>
+      <h2 class="text-xl lg:text-2xl max-w-[700px] text-black dark:text-white">
+        <span
+          >With several years of experience in Frontend Web Development and
+          UI/UX Design,
+        </span>
+        <span class="text-yellow-800 dark:text-yellow-200"
+          >Frontend Web Development and UI/UX Design.</span
+        >
+        <span class="text-red-800 dark:text-red-200">
+          I am a passionate designer from Gujarat, India.</span
+        >
+        <span class="text-sky-800 dark:text-sky-200">
+          I specialize in crafting exceptional and innovative web designs that
+          elevate user experiences and drive engagement. My commitment to
+          excellence in both design and development ensures that every project I
+          undertake stands out in a crowded digital landscape.
+        </span>
+      </h2>
 
-			<SectionContainer id="proyectos">
-				<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90">
-					<CodeIcon class="size-7" />
-					Proyectos
-				</h2>
-				<Projects />
-			</SectionContainer>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/anirudha-bambhaniya/">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Anshhh-xddd">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <!-- Updated email section -->
+        <SocialPill href={gmailLink}>
+          <MailIcon class="size-4 md:size-6" />
+          aniruddhbambhaniya.dev.29@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
-			<SectionContainer id="sobre-mi">
-				<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90">
-					<ProfileCheck class="size-7" />
-					Sobre mi
-				</h2>
-				<AboutMe />
-			</SectionContainer>
-		</div>
-	</main>
+    <div class="space-y-24">
+      <SectionContainer id="experiencia">
+        <h2
+          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90"
+        >
+          <Briefcase class="size-7" />
+          SKILLS
+        </h2>
+		<Skills />
+		<p>
+			
+		</p>
+      </SectionContainer>
+      <SectionContainer id="experiencia">
+        <h2
+          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90"
+        >
+          <Briefcase class="size-7" />
+          Experience
+        </h2>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <h2
+          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90"
+        >
+          <CodeIcon class="size-7" />
+          Project's
+        </h2>
+        <Projects />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <h2
+          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/90 dark:text-white/90"
+        >
+          <ProfileCheck class="size-7" />
+          About me
+        </h2>
+        <AboutMe />
+      </SectionContainer>
+    </div>
+  </main>
 </Layout>
